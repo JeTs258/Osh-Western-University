@@ -1,0 +1,36 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "footer": {
+    "copyright": "© 2024 All rights reserved",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "followUs": "Follow us"
+  },
+  "common": {
+    "language": "Language",
+    "readMore": "Read more",
+    "learnMore": "Learn more",
+    "getStarted": "Get started",
+    "documentation": "Documentation",
+    "deployNow": "Deploy Now",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close"
+  },
+  "home": {
+    "title": "Welcome to Next.js",
+    "description": "To get started, edit the page.tsx file",
+    "subtitle": "Looking for a starting point or more instructions? Head over to {templates} or the {learning} center.",
+    "templates": "Templates",
+    "learningCenter": "Learning"
+  }
+}
