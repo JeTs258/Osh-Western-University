@@ -1,0 +1,25 @@
+{
+  "site": {
+    "title": "Osh-Western University",
+    "description": "A leading institution of higher education"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "programs": "Programs",
+    "admissions": "Admissions",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "learnMore": "Learn More",
+    "apply": "Apply Now",
+    "getStarted": "Get Started",
+    "readMore": "Read More"
+  },
+  "footer": {
+    "copyright": "© {{year}} Osh-Western University. All rights reserved.",
+    "quickLinks": "Quick Links",
+    "resources": "Resources",
+    "connect": "Connect"
+  }
+}
