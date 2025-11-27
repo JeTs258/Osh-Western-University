@@ -1,0 +1,281 @@
+/* Tailwind CSS Input File for Osh-Western University */
+
+/* Import Tailwind's base, components, and utilities */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Base Styles */
+@layer base {
+  /* Optimize font rendering for multilingual support */
+  html {
+    @apply scroll-smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-sans text-gray-900 bg-gray-50;
+  }
+
+  /* Cyrillic font support */
+  html[lang="ru"] body {
+    @apply font-cyrillic;
+  }
+
+  /* Chinese font support */
+  html[lang="zh"] body {
+    @apply font-chinese;
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold text-gray-900;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  /* Links */
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  /* Forms */
+  input, textarea, select {
+    @apply border-gray-300 focus:border-primary-500 focus:ring focus:ring-primary-200 focus:ring-opacity-50 rounded-md;
+  }
+}
+
+/* Custom Component Styles */
+@layer components {
+  /* Navigation */
+  .nav-link {
+    @apply text-gray-700 hover:text-primary-600 transition-colors px-3 py-2;
+  }
+
+  .nav-link-active {
+    @apply text-primary-600 font-semibold;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-200 inline-block text-center;
+  }
+
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-500 text-white hover:bg-secondary-600 active:bg-secondary-700;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white border border-gray-200 rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow;
+  }
+
+  .card-hover {
+    @apply transform hover:-translate-y-1 transition-transform;
+  }
+
+  /* Container */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Hero Section */
+  .hero {
+    @apply pt-24 pb-16 bg-gradient-to-br from-primary-600 to-primary-800 text-white;
+  }
+
+  .hero-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold mb-6;
+  }
+
+  .hero-subtitle {
+    @apply text-xl md:text-2xl mb-4 text-primary-100;
+  }
+
+  /* Stats */
+  .stat-number {
+    @apply text-4xl md:text-5xl font-bold text-primary-600 mb-2;
+  }
+
+  .stat-label {
+    @apply text-gray-600 text-sm md:text-base;
+  }
+
+  /* Footer */
+  .footer {
+    @apply bg-gray-900 text-gray-300 py-12;
+  }
+
+  .footer-heading {
+    @apply text-white text-lg font-bold mb-4;
+  }
+
+  .footer-link {
+    @apply hover:text-white transition-colors;
+  }
+
+  /* Language Switcher */
+  .lang-link {
+    @apply px-2 py-1 rounded hover:bg-gray-100 transition-colors;
+  }
+
+  .lang-link-active {
+    @apply font-bold text-primary-600;
+  }
+
+  /* Badges */
+  .badge {
+    @apply inline-block px-3 py-1 rounded-full text-sm font-semibold;
+  }
+
+  .badge-primary {
+    @apply bg-primary-100 text-primary-700;
+  }
+
+  .badge-success {
+    @apply bg-green-100 text-green-700;
+  }
+
+  .badge-warning {
+    @apply bg-yellow-100 text-yellow-700;
+  }
+
+  /* Form Elements */
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-2;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-200 focus:border-primary-500;
+  }
+
+  .form-textarea {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-200 focus:border-primary-500 resize-y;
+  }
+
+  .form-select {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-200 focus:border-primary-500;
+  }
+
+  /* Program Cards */
+  .program-card {
+    @apply card hover:border-primary-300;
+  }
+
+  .program-title {
+    @apply text-xl font-bold text-gray-900 mb-2;
+  }
+
+  .program-description {
+    @apply text-gray-600 mb-4;
+  }
+
+  /* Faculty Card */
+  .faculty-card {
+    @apply card text-center;
+  }
+
+  .faculty-image {
+    @apply w-32 h-32 rounded-full mx-auto mb-4 object-cover;
+  }
+
+  .faculty-name {
+    @apply text-lg font-bold text-gray-900 mb-1;
+  }
+
+  .faculty-title {
+    @apply text-sm text-gray-600 mb-2;
+  }
+}
+
+/* Custom Utility Classes */
+@layer utilities {
+  /* Text gradients */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-800;
+  }
+
+  /* Shadows */
+  .shadow-primary {
+    box-shadow: 0 10px 25px -5px rgba(0, 115, 230, 0.15);
+  }
+
+  /* Animations */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Responsive text sizing for multilingual content */
+  .text-adaptive {
+    @apply text-base md:text-lg;
+  }
+
+  html[lang="ru"] .text-adaptive {
+    @apply text-sm md:text-base; /* Slightly smaller for Russian due to length */
+  }
+
+  html[lang="zh"] .text-adaptive {
+    @apply text-base md:text-lg; /* Standard for Chinese */
+  }
+
+  /* Mobile menu animation */
+  .mobile-menu-enter {
+    animation: slideDown 0.3s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    @apply text-black bg-white;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

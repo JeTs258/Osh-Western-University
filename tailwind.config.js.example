@@ -1,0 +1,86 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./ru/**/*.html",
+    "./en/**/*.html", 
+    "./zh/**/*.html",
+    "./js/**/*.js",
+    "./*.html"
+  ],
+  theme: {
+    extend: {
+      colors: {
+        // Osh-Western University brand colors
+        primary: {
+          50: '#e6f2ff',
+          100: '#b3d9ff',
+          200: '#80bfff',
+          300: '#4da6ff',
+          400: '#1a8cff',
+          500: '#0073e6',  // Main brand color
+          600: '#005bb3',
+          700: '#004380',
+          800: '#002b4d',
+          900: '#00131a'
+        },
+        secondary: {
+          50: '#fff5f2',
+          100: '#ffe4db',
+          200: '#ffc9b8',
+          300: '#ffae95',
+          400: '#ff9372',
+          500: '#ff6b35',  // Accent color
+          600: '#e65520',
+          700: '#b34419',
+          800: '#803012',
+          900: '#4d1c0b'
+        },
+        // Kyrgyzstan national colors (use sparingly for special elements)
+        kyrgyz: {
+          red: '#EE1C25',
+          yellow: '#FFCE00'
+        }
+      },
+      fontFamily: {
+        // Multi-language font stack
+        sans: ['Inter', 'Roboto', 'system-ui', '-apple-system', 'sans-serif'],
+        cyrillic: ['PT Sans', 'Roboto', 'system-ui', 'sans-serif'],
+        chinese: ['Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', 'sans-serif'],
+        heading: ['Montserrat', 'PT Sans', 'sans-serif']
+      },
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+      },
+      maxWidth: {
+        '8xl': '88rem',
+        '9xl': '96rem',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'slide-up': 'slideUp 0.5s ease-out',
+        'slide-down': 'slideDown 0.5s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideDown: {
+          '0%': { transform: 'translateY(-20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        }
+      }
+    },
+  },
+  plugins: [
+    // Optional: Add plugins for additional functionality
+    // require('@tailwindcss/forms'),
+    // require('@tailwindcss/typography'),
+    // require('@tailwindcss/aspect-ratio'),
+  ],
+}

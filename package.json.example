@@ -1,0 +1,36 @@
+{
+  "name": "osh-western-university",
+  "version": "1.0.0",
+  "description": "Official website for Osh-Western University - Multilingual educational portal (RU/EN/ZH)",
+  "main": "index.html",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "serve": "serve .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "university",
+    "education",
+    "kyrgyzstan",
+    "multilingual",
+    "tailwindcss",
+    "static-site"
+  ],
+  "author": "Osh-Western University",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/osh-western-university.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/osh-western-university/issues"
+  },
+  "homepage": "https://osh-western.kg"
+}
