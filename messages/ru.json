@@ -1,0 +1,36 @@
+{
+  "navigation": {
+    "home": "Главная",
+    "about": "О нас",
+    "services": "Услуги",
+    "contact": "Контакты",
+    "blog": "Блог"
+  },
+  "footer": {
+    "copyright": "© 2024 Все права защищены",
+    "privacyPolicy": "Политика конфиденциальности",
+    "termsOfService": "Условия использования",
+    "followUs": "Следите за нами"
+  },
+  "common": {
+    "language": "Язык",
+    "readMore": "Читать далее",
+    "learnMore": "Узнать больше",
+    "getStarted": "Начать",
+    "documentation": "Документация",
+    "deployNow": "Развернуть сейчас",
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "success": "Успешно",
+    "cancel": "Отмена",
+    "save": "Сохранить",
+    "close": "Закрыть"
+  },
+  "home": {
+    "title": "Добро пожаловать в Next.js",
+    "description": "Чтобы начать, отредактируйте файл page.tsx",
+    "subtitle": "Ищете отправную точку или дополнительные инструкции? Посетите {templates} или {learning}.",
+    "templates": "Шаблоны",
+    "learningCenter": "Учебный центр"
+  }
+}

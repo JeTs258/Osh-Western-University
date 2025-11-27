@@ -1,0 +1,36 @@
+{
+  "navigation": {
+    "home": "首页",
+    "about": "关于",
+    "services": "服务",
+    "contact": "联系",
+    "blog": "博客"
+  },
+  "footer": {
+    "copyright": "© 2024 版权所有",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "followUs": "关注我们"
+  },
+  "common": {
+    "language": "语言",
+    "readMore": "阅读更多",
+    "learnMore": "了解更多",
+    "getStarted": "开始使用",
+    "documentation": "文档",
+    "deployNow": "立即部署",
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "cancel": "取消",
+    "save": "保存",
+    "close": "关闭"
+  },
+  "home": {
+    "title": "欢迎使用 Next.js",
+    "description": "要开始使用，请编辑 page.tsx 文件",
+    "subtitle": "正在寻找起点或更多说明？请访问{templates}或{learning}中心。",
+    "templates": "模板",
+    "learningCenter": "学习"
+  }
+}
