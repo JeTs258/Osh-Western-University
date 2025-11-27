@@ -1,0 +1,25 @@
+{
+  "site": {
+    "title": "Université Osh-Western",
+    "description": "Un établissement d'enseignement supérieur de premier plan"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "programs": "Programmes",
+    "admissions": "Admissions",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "learnMore": "En savoir plus",
+    "apply": "Postuler maintenant",
+    "getStarted": "Commencer",
+    "readMore": "Lire la suite"
+  },
+  "footer": {
+    "copyright": "© {{year}} Université Osh-Western. Tous droits réservés.",
+    "quickLinks": "Liens rapides",
+    "resources": "Ressources",
+    "connect": "Connecter"
+  }
+}

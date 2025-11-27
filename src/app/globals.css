@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --osh-primary: #003d5b;
+  --osh-secondary: #f89820;
+  --osh-tertiary: #5c7f8a;
+  --osh-neutral: #f5f5f5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-osh-primary: var(--osh-primary);
+  --color-osh-secondary: var(--osh-secondary);
+  --color-osh-tertiary: var(--osh-tertiary);
+  --color-osh-neutral: var(--osh-neutral);
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .shadow-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  .shadow-card-hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+}
